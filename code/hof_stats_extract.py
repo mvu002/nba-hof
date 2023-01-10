@@ -28,6 +28,7 @@ hof_players_profiles = [player for player in nba_players
 						if (hof_players['Player'] == (player['full_name'])).any()
 						or (hof_players_aliases == (player['full_name'])).any()]
 hof_players_profiles = pd.DataFrame(hof_players_profiles)
+hof_players_profiles.to_csv("../data/hof_players_profiles.csv")
 #print(hof_players_profiles)
 
 # Check for duplicates
