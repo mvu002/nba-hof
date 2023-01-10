@@ -122,3 +122,5 @@ final_data['numAllStarAppearances'] = final_data['numAllStarAppearances'].fillna
 final_data = final_data.drop(columns = ['full_name'])
 final_data['numAllStarAppearances'] = final_data['numAllStarAppearances'].astype(float)
 print(final_data)
+
+final_data.to_csv("../data/final_data.csv")
